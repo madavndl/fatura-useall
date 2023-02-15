@@ -1,0 +1,92 @@
+
+body{
+    background: white url(assets/background.png) center center no-repeat fixed;
+    background-size: cover;
+    height: 90vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container{
+    position: relative;
+    display: flex;
+}
+
+#logo-cabecalho{
+    position: absolute;
+    display: inline;
+    left: 1%;
+    top: 15px;
+}
+
+#caixabranca1{
+    position: relative;
+    height: 90vh;
+    width: 50vw;
+    background-color: white;
+    margin-left: 1%;
+    border-radius: 10px;
+    box-shadow: 1px 0px 30px rgb(193, 192, 199);
+}
+
+#caixabranca1 h1{
+    text-align: center;
+    margin-top: 1%;
+}
+
+#dados-cinza{
+    margin-top: 5%;
+    background-color: rgb(224, 224, 224);
+    width: 40vw;
+    margin-left: 3.1vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#informacoes-cinza{
+    margin-top: 5%;
+    background-color: rgb(224, 224, 224);
+    width: 40vw;
+    margin-left: 3.1vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#caixabranca2{
+    position: relative;
+    height: 90vh;
+    width: 50vw;
+    background-color: white;
+    margin-left: 1.5%;
+    border-radius: 10px;
+    box-shadow: 1px 0px 30px rgb(193, 192, 199);
+}
+
+
+#unidade-consumidora{
+    position:absolute;
+    padding-left: 5px;
+    font-weight: bolder;  
+    top: 45px;
+}
+
+#cabecalho{
+    top: 5px;
+    padding-left: 7%;
+    margin-bottom: 5%;
+}
+
+#imgabaixo{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2vh ;
+}
+
+a {
+    display: block;
+    
+}
+
+span{
+    color: #644FE0;;
+}
