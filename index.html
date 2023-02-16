@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,33 +20,50 @@
     <div id="container">
         <div id="caixabranca1">
 
-            
-            
             <div id="dados-cinza">
-                <h1>Dados da <span>Fatura</span></h1>
-                <p>Nome:</p>
-                <p>CPF/CNPJ:</p>
+                <h1 class="titulo">Dados da <span>Fatura</span></h1>
+                <p class="paragrafo-titulo">Abaixo estão os dados cadastrados na fatura.</p>
+                <br>
+                <b><p>Nome:</p>
+                <p>CPF/CNPJ:</p> 
                 <p>E-mail:</p>
                 <p>Telefone:</p>
-                <p>Endereço:</p>
+                <p>Endereço:</p></b>
             </div>
-
             
-            
-            <div id="informacoes-cinza">
-                <h1>Acessos <span>Rápidos</span></h1>
+            <div id="acessos-cinza">
+                <h1 class="titulo">Acessos <span>Rápidos</span></h1>
+                <p class="paragrafo-titulo">Nos links abaixo, você encontrará serviços que o ajudaram no seu dia a dia.</p>
+                <br>
                 <a href="#">Editar Dados Cadastrados</a>
                 <a href="#">Solicitar Desligamento</a>
-                <a href="#">Avisar Falta de Energia</a>
+                <a href="#">Dúvidas Frequentes</a>
             </div>
             
         </div>
 
         <div id="caixabranca2">
-            
-        </div>
 
-    </div>
+            <div id="vias-cinza">
+                <h1 class="titulo">Vias em <span>Aberto</span></h1>
+                <p class="paragrafo-titulo">Abaixo estão todas as faturas em aberto. Selecione qual deseja visualizar o boleto.</p>
+            </div>
+
+            <div id="gasto-cinza">
+                <h1 class="titulo">Gasto <span>Mensal</span></h1>
+
+                <div class="chart-container">
+                    <canvas id="chart"></canvas> 
+                    </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"
+                    ></script>
+                    <script src="chart.js"></script>
+                
+            </div>
+            
+        </div> 
+
+    </div> 
 
     <script src=" main.js"></script>
     <img id="imgabaixo" src="assets/logo_useall.png" alt="logo useall">

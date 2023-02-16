@@ -1,26 +1,31 @@
-
-body{
+body {
     background: white url(assets/background.png) center center no-repeat fixed;
     background-size: cover;
     height: 90vh;
     font-family: 'Roboto', sans-serif;
 }
 
-#container{
+#container {
     position: relative;
     display: flex;
 }
 
-#logo-cabecalho{
+#cabecalho {
+    top: 5px;
+    padding-left: 7%;
+    margin-bottom: 5%;
+}
+
+#logo-cabecalho {
     position: absolute;
     display: inline;
     left: 1%;
     top: 15px;
 }
-
-#caixabranca1{
+/*/---------------------------------CAIXA BRANCA 1 ---------------------------------/*/
+#caixabranca1 {
     position: relative;
-    height: 90vh;
+    height: 93vh;
     width: 50vw;
     background-color: white;
     margin-left: 1%;
@@ -28,12 +33,29 @@ body{
     box-shadow: 1px 0px 30px rgb(193, 192, 199);
 }
 
-#caixabranca1 h1{
+@media (max-height: 768px){
+    #caixabranca1{
+        height: 105vh;
+    }
+}
+
+/*/@media (max-height: 1024px){
+    #caixabranca1 {
+        height: 81vh;
+    }
+
+}/*/
+
+.titulo{
     text-align: center;
     margin-top: 1%;
 }
 
-#dados-cinza{
+.paragrafo-titulo{
+    text-align: center;
+}
+
+#dados-cinza {
     margin-top: 5%;
     background-color: rgb(224, 224, 224);
     width: 40vw;
@@ -42,16 +64,39 @@ body{
     border-radius: 10px;
 }
 
-#informacoes-cinza{
+#dados-cinza p{
+    margin-left: 20px;
+}
+
+#acessos-cinza {
+    height: 30vh;
     margin-top: 5%;
     background-color: rgb(224, 224, 224);
     width: 40vw;
     margin-left: 3.1vw;
-    padding: 10px;
+    padding: 14px;
     border-radius: 10px;
 }
 
-#caixabranca2{
+a {
+    display: block;
+    line-height: 2.0;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    font-weight: bolder
+}
+
+a:hover {
+    color: #644FE0;
+}
+
+#acessos-cinza a {
+    margin-left: 20px;
+}
+
+/*/-----------------------CAIXA BRANCA 2 -----------------------------/*/
+
+#caixabranca2 {
     position: relative;
     height: 90vh;
     width: 50vw;
@@ -61,32 +106,77 @@ body{
     box-shadow: 1px 0px 30px rgb(193, 192, 199);
 }
 
+@media (max-height: 1024px){
+    #caixabranca2 {
+        height: 81vh;
+    }
+}
 
-#unidade-consumidora{
-    position:absolute;
+#gasto-cinza {
+    height: 43vh;
+    margin-top: 5%;
+    background-color: rgb(224, 224, 224);
+    width: 40vw;
+    margin-left: 3.1vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media (max-height: 768px){
+    #gasto-cinza{
+        height: 55vh;
+    }
+}
+
+@media (max-height: 1024px){
+    #gasto-cinza {
+        height: 38vh;
+    }
+}
+
+#vias-cinza {
+    height: 26vh;
+    margin-top: 5%;
+    background-color: rgb(224, 224, 224);
+    width: 40vw;
+    margin-left: 3.1vw;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#unidade-consumidora {
+    position: absolute;
     padding-left: 5px;
-    font-weight: bolder;  
+    font-weight: bolder;
     top: 45px;
 }
 
-#cabecalho{
-    top: 5px;
-    padding-left: 7%;
-    margin-bottom: 5%;
-}
-
-#imgabaixo{
+#imgabaixo {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    top: 2vh ;
+    top: 2vh;
 }
 
-a {
-    display: block;
-    
+span {
+    color: #644FE0;
 }
 
-span{
-    color: #644FE0;;
+@media (max-height: 768px){
+    #caixabranca2{
+        height: 105vh;
+    }
+}
+
+/*/----------------------GRAFICO----------------------------------/*/
+
+canvas {
+    border: 1px dotted rgba(255, 255, 255, 0);
+}
+
+.chart-container{
+    position: relative;
+    margin: auto;
+    height: 40vh;
+    width: 40vw;    
 }
