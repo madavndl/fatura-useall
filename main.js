@@ -43,3 +43,5 @@ Chart.Bar('chart',{
     options: options,
     data: data
 });
+
+
